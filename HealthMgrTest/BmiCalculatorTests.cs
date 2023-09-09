@@ -1,13 +1,14 @@
-namespace HealthMgrTest
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace HealthMgr.Tests
 {
+    [TestClass()]
     public class BmiCalculatorTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
-        [Test]
+        [TestMethod()]
         public void CalculateTest()
         {
             HealthMgr.BmiCalculator bmi = new HealthMgr.BmiCalculator();
